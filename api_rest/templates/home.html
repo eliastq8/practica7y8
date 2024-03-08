@@ -1,0 +1,16 @@
+<h1>Pantalla de home</h1>
+{% if user.is_authenticated %}
+<li>
+    <a href="/salir/">Cerrar sesion</a>
+</li>
+<li>
+    <a href="/nueva/">Frutas</a>
+</li>
+{% else %}
+<li>
+    <a href="/registro/">Registro</a>
+</li>
+<li>
+    <a href="/login/">Iniciar sesion</a>
+</li>
+{% endif %}
